@@ -14,6 +14,9 @@
 		03D596081FCD8EE5004F04AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D596061FCD8EE5004F04AE /* LaunchScreen.storyboard */; };
 		03D596131FCD8EE6004F04AE /* ExDucereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D596121FCD8EE6004F04AE /* ExDucereTests.swift */; };
 		03D5961E1FCD8EE6004F04AE /* ExDucereUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5961D1FCD8EE6004F04AE /* ExDucereUITests.swift */; };
+		32B1DBFF8D241C740B35F696 /* Pods_ExDucereTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2575AC90D86CF5F0A582F3 /* Pods_ExDucereTests.framework */; };
+		7A3A0202E61693462FFD808D /* Pods_ExDucereUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342F00950FE845306853C2EB /* Pods_ExDucereUITests.framework */; };
+		AFF6670287896ADB8ED6C7D7 /* Pods_ExDucere.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F5A8FDBB242169B4786C8E /* Pods_ExDucere.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,15 @@
 		03D596191FCD8EE6004F04AE /* ExDucereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExDucereUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D5961D1FCD8EE6004F04AE /* ExDucereUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDucereUITests.swift; sourceTree = "<group>"; };
 		03D5961F1FCD8EE6004F04AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31F5A8FDBB242169B4786C8E /* Pods_ExDucere.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExDucere.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		342F00950FE845306853C2EB /* Pods_ExDucereUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExDucereUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61B6E9987A68BF02065270DE /* Pods-ExDucereTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDucereTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExDucereTests/Pods-ExDucereTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81043D6DB36CEC3A3D08B7FA /* Pods-ExDucereUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDucereUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExDucereUITests/Pods-ExDucereUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA6C30903420A514213B305A /* Pods-ExDucere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDucere.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExDucere/Pods-ExDucere.debug.xcconfig"; sourceTree = "<group>"; };
+		C3866269C114CFD939F2B73B /* Pods-ExDucere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDucere.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExDucere/Pods-ExDucere.release.xcconfig"; sourceTree = "<group>"; };
+		CF2575AC90D86CF5F0A582F3 /* Pods_ExDucereTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExDucereTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF944113061B38E0370AF917 /* Pods-ExDucereTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDucereTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExDucereTests/Pods-ExDucereTests.release.xcconfig"; sourceTree = "<group>"; };
+		E63518FBED8EF2D81B99B801 /* Pods-ExDucereUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDucereUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExDucereUITests/Pods-ExDucereUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF6670287896ADB8ED6C7D7 /* Pods_ExDucere.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32B1DBFF8D241C740B35F696 /* Pods_ExDucereTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A3A0202E61693462FFD808D /* Pods_ExDucereUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				03D596111FCD8EE6004F04AE /* ExDucereTests */,
 				03D5961C1FCD8EE6004F04AE /* ExDucereUITests */,
 				03D595FB1FCD8EE5004F04AE /* Products */,
+				232B057C3AD1DB19EECDDA7E /* Pods */,
+				E8813ABE1E329673CA69DD01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = ExDucereUITests;
 			sourceTree = "<group>";
 		};
+		232B057C3AD1DB19EECDDA7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA6C30903420A514213B305A /* Pods-ExDucere.debug.xcconfig */,
+				C3866269C114CFD939F2B73B /* Pods-ExDucere.release.xcconfig */,
+				61B6E9987A68BF02065270DE /* Pods-ExDucereTests.debug.xcconfig */,
+				CF944113061B38E0370AF917 /* Pods-ExDucereTests.release.xcconfig */,
+				81043D6DB36CEC3A3D08B7FA /* Pods-ExDucereUITests.debug.xcconfig */,
+				E63518FBED8EF2D81B99B801 /* Pods-ExDucereUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E8813ABE1E329673CA69DD01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31F5A8FDBB242169B4786C8E /* Pods_ExDucere.framework */,
+				CF2575AC90D86CF5F0A582F3 /* Pods_ExDucereTests.framework */,
+				342F00950FE845306853C2EB /* Pods_ExDucereUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03D596221FCD8EE6004F04AE /* Build configuration list for PBXNativeTarget "ExDucere" */;
 			buildPhases = (
+				D59BCA3403DC92B02D5CBD0A /* [CP] Check Pods Manifest.lock */,
 				03D595F61FCD8EE5004F04AE /* Sources */,
 				03D595F71FCD8EE5004F04AE /* Frameworks */,
 				03D595F81FCD8EE5004F04AE /* Resources */,
+				5AE3BB2917FF5C4999F4D1E8 /* [CP] Embed Pods Frameworks */,
+				730858658158EBF511751E5B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03D596251FCD8EE6004F04AE /* Build configuration list for PBXNativeTarget "ExDucereTests" */;
 			buildPhases = (
+				A1E119B2834A925C794633FF /* [CP] Check Pods Manifest.lock */,
 				03D5960A1FCD8EE5004F04AE /* Sources */,
 				03D5960B1FCD8EE5004F04AE /* Frameworks */,
 				03D5960C1FCD8EE5004F04AE /* Resources */,
+				1002C4A3AB268392B48D16AE /* [CP] Embed Pods Frameworks */,
+				72BCC46112B5009EF88B24BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03D596281FCD8EE6004F04AE /* Build configuration list for PBXNativeTarget "ExDucereUITests" */;
 			buildPhases = (
+				7F2A839F56A2158C55590AD0 /* [CP] Check Pods Manifest.lock */,
 				03D596151FCD8EE6004F04AE /* Sources */,
 				03D596161FCD8EE6004F04AE /* Frameworks */,
 				03D596171FCD8EE6004F04AE /* Resources */,
+				4CAEA870EF9CD5DDF50E3A26 /* [CP] Embed Pods Frameworks */,
+				B325AFC75085E1B32C646919 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,162 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1002C4A3AB268392B48D16AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExDucereTests/Pods-ExDucereTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CAEA870EF9CD5DDF50E3A26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExDucereUITests/Pods-ExDucereUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AE3BB2917FF5C4999F4D1E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ExDucere/Pods-ExDucere-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExDucere/Pods-ExDucere-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72BCC46112B5009EF88B24BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExDucereTests/Pods-ExDucereTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		730858658158EBF511751E5B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExDucere/Pods-ExDucere-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F2A839F56A2158C55590AD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExDucereUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1E119B2834A925C794633FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExDucereTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B325AFC75085E1B32C646919 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExDucereUITests/Pods-ExDucereUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D59BCA3403DC92B02D5CBD0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExDucere-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		03D595F61FCD8EE5004F04AE /* Sources */ = {
@@ -424,6 +629,7 @@
 		};
 		03D596231FCD8EE6004F04AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA6C30903420A514213B305A /* Pods-ExDucere.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +645,7 @@
 		};
 		03D596241FCD8EE6004F04AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3866269C114CFD939F2B73B /* Pods-ExDucere.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +661,7 @@
 		};
 		03D596261FCD8EE6004F04AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61B6E9987A68BF02065270DE /* Pods-ExDucereTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +679,7 @@
 		};
 		03D596271FCD8EE6004F04AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF944113061B38E0370AF917 /* Pods-ExDucereTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +697,7 @@
 		};
 		03D596291FCD8EE6004F04AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81043D6DB36CEC3A3D08B7FA /* Pods-ExDucereUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +714,7 @@
 		};
 		03D5962A1FCD8EE6004F04AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E63518FBED8EF2D81B99B801 /* Pods-ExDucereUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
