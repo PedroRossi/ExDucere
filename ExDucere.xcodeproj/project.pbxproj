@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		03D595FE1FCD8EE5004F04AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D595FD1FCD8EE5004F04AE /* AppDelegate.swift */; };
-		03D596001FCD8EE5004F04AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D595FF1FCD8EE5004F04AE /* ViewController.swift */; };
 		03D596031FCD8EE5004F04AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D596011FCD8EE5004F04AE /* Main.storyboard */; };
 		03D596051FCD8EE5004F04AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D596041FCD8EE5004F04AE /* Assets.xcassets */; };
 		03D596081FCD8EE5004F04AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D596061FCD8EE5004F04AE /* LaunchScreen.storyboard */; };
 		03D596131FCD8EE6004F04AE /* ExDucereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D596121FCD8EE6004F04AE /* ExDucereTests.swift */; };
 		03D5961E1FCD8EE6004F04AE /* ExDucereUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5961D1FCD8EE6004F04AE /* ExDucereUITests.swift */; };
+		03F9A5F91FCD9A010050519A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03F9A5F81FCD9A010050519A /* GoogleService-Info.plist */; };
+		03F9A5FE1FCD9C8A0050519A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F9A5FD1FCD9C8A0050519A /* LoginViewController.swift */; };
+		03F9A6021FCD9D6C0050519A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F9A6011FCD9D6C0050519A /* SignupViewController.swift */; };
 		32B1DBFF8D241C740B35F696 /* Pods_ExDucereTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2575AC90D86CF5F0A582F3 /* Pods_ExDucereTests.framework */; };
 		7A3A0202E61693462FFD808D /* Pods_ExDucereUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342F00950FE845306853C2EB /* Pods_ExDucereUITests.framework */; };
 		AFF6670287896ADB8ED6C7D7 /* Pods_ExDucere.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F5A8FDBB242169B4786C8E /* Pods_ExDucere.framework */; };
@@ -39,7 +41,6 @@
 /* Begin PBXFileReference section */
 		03D595FA1FCD8EE5004F04AE /* ExDucere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExDucere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D595FD1FCD8EE5004F04AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		03D595FF1FCD8EE5004F04AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		03D596021FCD8EE5004F04AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03D596041FCD8EE5004F04AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03D596071FCD8EE5004F04AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +51,9 @@
 		03D596191FCD8EE6004F04AE /* ExDucereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExDucereUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D5961D1FCD8EE6004F04AE /* ExDucereUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDucereUITests.swift; sourceTree = "<group>"; };
 		03D5961F1FCD8EE6004F04AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F9A5F81FCD9A010050519A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		03F9A5FD1FCD9C8A0050519A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		03F9A6011FCD9D6C0050519A /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		31F5A8FDBB242169B4786C8E /* Pods_ExDucere.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExDucere.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		342F00950FE845306853C2EB /* Pods_ExDucereUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExDucereUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B6E9987A68BF02065270DE /* Pods-ExDucereTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDucereTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExDucereTests/Pods-ExDucereTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,8 +118,10 @@
 		03D595FC1FCD8EE5004F04AE /* ExDucere */ = {
 			isa = PBXGroup;
 			children = (
+				03F9A5FB1FCD9C380050519A /* containers */,
+				03F9A5FA1FCD9C1B0050519A /* models */,
+				03F9A5F81FCD9A010050519A /* GoogleService-Info.plist */,
 				03D595FD1FCD8EE5004F04AE /* AppDelegate.swift */,
-				03D595FF1FCD8EE5004F04AE /* ViewController.swift */,
 				03D596011FCD8EE5004F04AE /* Main.storyboard */,
 				03D596041FCD8EE5004F04AE /* Assets.xcassets */,
 				03D596061FCD8EE5004F04AE /* LaunchScreen.storyboard */,
@@ -140,6 +146,38 @@
 				03D5961F1FCD8EE6004F04AE /* Info.plist */,
 			);
 			path = ExDucereUITests;
+			sourceTree = "<group>";
+		};
+		03F9A5FA1FCD9C1B0050519A /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		03F9A5FB1FCD9C380050519A /* containers */ = {
+			isa = PBXGroup;
+			children = (
+				03F9A6001FCD9D5B0050519A /* Signup */,
+				03F9A5FC1FCD9C640050519A /* Login */,
+			);
+			path = containers;
+			sourceTree = "<group>";
+		};
+		03F9A5FC1FCD9C640050519A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				03F9A5FD1FCD9C8A0050519A /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		03F9A6001FCD9D5B0050519A /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				03F9A6011FCD9D6C0050519A /* SignupViewController.swift */,
+			);
+			path = Signup;
 			sourceTree = "<group>";
 		};
 		232B057C3AD1DB19EECDDA7E /* Pods */ = {
@@ -282,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03D596081FCD8EE5004F04AE /* LaunchScreen.storyboard in Resources */,
+				03F9A5F91FCD9A010050519A /* GoogleService-Info.plist in Resources */,
 				03D596051FCD8EE5004F04AE /* Assets.xcassets in Resources */,
 				03D596031FCD8EE5004F04AE /* Main.storyboard in Resources */,
 			);
@@ -464,7 +503,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03D596001FCD8EE5004F04AE /* ViewController.swift in Sources */,
+				03F9A6021FCD9D6C0050519A /* SignupViewController.swift in Sources */,
+				03F9A5FE1FCD9C8A0050519A /* LoginViewController.swift in Sources */,
 				03D595FE1FCD8EE5004F04AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
