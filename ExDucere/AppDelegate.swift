@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication,
                      open url: URL,
                      sourceApplication: String?,
-                     annotation: AnyObject?) -> Bool {
+                     annotation: Any?) -> Bool {
         return FBSDKApplicationDelegate.sharedInstance().application(
             application,
             open: url,
