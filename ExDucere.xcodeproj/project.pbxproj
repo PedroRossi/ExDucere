@@ -18,6 +18,7 @@
 		03F9A6021FCD9D6C0050519A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F9A6011FCD9D6C0050519A /* SignupViewController.swift */; };
 		32B1DBFF8D241C740B35F696 /* Pods_ExDucereTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2575AC90D86CF5F0A582F3 /* Pods_ExDucereTests.framework */; };
 		7A3A0202E61693462FFD808D /* Pods_ExDucereUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342F00950FE845306853C2EB /* Pods_ExDucereUITests.framework */; };
+		8E8508E41FD199F90041B558 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8508E31FD199F90041B558 /* AddPostViewController.swift */; };
 		AFF6670287896ADB8ED6C7D7 /* Pods_ExDucere.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F5A8FDBB242169B4786C8E /* Pods_ExDucere.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		342F00950FE845306853C2EB /* Pods_ExDucereUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExDucereUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B6E9987A68BF02065270DE /* Pods-ExDucereTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDucereTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExDucereTests/Pods-ExDucereTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81043D6DB36CEC3A3D08B7FA /* Pods-ExDucereUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDucereUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExDucereUITests/Pods-ExDucereUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E8508E31FD199F90041B558 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		AA6C30903420A514213B305A /* Pods-ExDucere.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDucere.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExDucere/Pods-ExDucere.debug.xcconfig"; sourceTree = "<group>"; };
 		C3866269C114CFD939F2B73B /* Pods-ExDucere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDucere.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExDucere/Pods-ExDucere.release.xcconfig"; sourceTree = "<group>"; };
 		CF2575AC90D86CF5F0A582F3 /* Pods_ExDucereTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExDucereTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +160,7 @@
 		03F9A5FB1FCD9C380050519A /* containers */ = {
 			isa = PBXGroup;
 			children = (
+				8E8508E21FD199AA0041B558 /* AddPost */,
 				03F9A6001FCD9D5B0050519A /* Signup */,
 				03F9A5FC1FCD9C640050519A /* Login */,
 			);
@@ -191,6 +194,14 @@
 				E63518FBED8EF2D81B99B801 /* Pods-ExDucereUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E8508E21FD199AA0041B558 /* AddPost */ = {
+			isa = PBXGroup;
+			children = (
+				8E8508E31FD199F90041B558 /* AddPostViewController.swift */,
+			);
+			path = AddPost;
 			sourceTree = "<group>";
 		};
 		E8813ABE1E329673CA69DD01 /* Frameworks */ = {
@@ -503,6 +514,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8508E41FD199F90041B558 /* AddPostViewController.swift in Sources */,
 				03F9A6021FCD9D6C0050519A /* SignupViewController.swift in Sources */,
 				03F9A5FE1FCD9C8A0050519A /* LoginViewController.swift in Sources */,
 				03D595FE1FCD8EE5004F04AE /* AppDelegate.swift in Sources */,

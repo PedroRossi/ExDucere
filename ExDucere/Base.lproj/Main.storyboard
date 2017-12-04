@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kjb-E5-aDf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q3M-Dr-yzo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -73,23 +73,82 @@
             </objects>
             <point key="canvasLocation" x="-569" y="367"/>
         </scene>
-        <!--Item 2-->
+        <!--Add Post View Controller-->
         <scene sceneID="hba-kx-PE2">
             <objects>
-                <viewController id="X98-OW-PiK" sceneMemberID="viewController">
+                <viewController id="X98-OW-PiK" customClass="AddPostViewController" customModule="ExDucere" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dts-wz-i3T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rMe-7s-RRq">
+                                <rect key="frame" x="125" y="69" width="240" height="76"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Disciplina:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKB-ft-3uz">
+                                <rect key="frame" x="16" y="69" width="101" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Assunto:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICK-xW-Xwr">
+                                <rect key="frame" x="16" y="153" width="101" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Faixa etária:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZS-Ik-rth">
+                                <rect key="frame" x="16" y="237" width="104" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escreva o assunto aqui" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OxY-bw-L54">
+                                <rect key="frame" x="125" y="176" width="240" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="6" translatesAutoresizingMaskIntoConstraints="NO" id="D5F-u9-Y5H">
+                                <rect key="frame" x="143" y="284" width="218" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderIdade:" destination="X98-OW-PiK" eventType="valueChanged" id="hBz-hN-XOy"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 a 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4a-BF-w8s">
+                                <rect key="frame" x="188" y="240" width="56" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="anos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1F-PN-N1m">
+                                <rect key="frame" x="246" y="240" width="76" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="4Jk-Rs-q6k"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="g7c-Yu-MRc"/>
+                    <tabBarItem key="tabBarItem" image="icons8-plus-math-50" id="g7c-Yu-MRc"/>
+                    <connections>
+                        <outlet property="picker" destination="rMe-7s-RRq" id="5Do-vX-XVu"/>
+                        <outlet property="valorIdade" destination="L4a-BF-w8s" id="0GI-x3-PuD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BK0-OL-A9K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3153" y="367"/>
+            <point key="canvasLocation" x="3152.8000000000002" y="366.56671664167919"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="HRR-aR-pSe">
             <objects>
                 <viewController id="TfQ-wx-tja" sceneMemberID="viewController">
@@ -99,13 +158,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="5gv-ev-gib"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="MRU-sv-hHN"/>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-edit-property-50" id="MRU-sv-hHN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZN-YO-5Hp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3153" y="1123"/>
         </scene>
-        <!--Item 1-->
+        <!--View Controller-->
         <scene sceneID="qGD-wh-eMt">
             <objects>
                 <viewController id="g1R-5B-OC8" sceneMemberID="viewController">
@@ -115,7 +174,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="KiG-fu-Wpu"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="qmu-Ef-an4"/>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-home-50" id="qmu-Ef-an4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Y7-P3-Dgk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -187,6 +246,11 @@
             <point key="canvasLocation" x="-1297" y="367"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-edit-property-50" width="50" height="50"/>
+        <image name="icons8-home-50" width="50" height="50"/>
+        <image name="icons8-plus-math-50" width="50" height="50"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kox-2J-mhL"/>
     </inferredMetricsTieBreakers>
