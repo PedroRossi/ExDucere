@@ -16,13 +16,24 @@ class LivroViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     //label
     @IBOutlet weak var valorIdade: UILabel!
     
+    
     //picker
     @IBOutlet weak var picker: UIPickerView!
+    
     
     //slider
     @IBAction func sliderIdade(_ sender: UISlider) {
         
         valorIdade.text = faixasIdade[Int(sender.value)]
+        
+    }
+    
+    //button
+    @IBOutlet weak var publicar: UIButton!
+    
+    @IBAction func publicarButton(_ sender: Any) {
+        
+        
         
     }
     

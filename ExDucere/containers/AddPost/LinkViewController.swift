@@ -30,12 +30,12 @@ class LinkViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     //button
     @IBOutlet weak var publicar: UIButton!
     
-    @IBAction func PublicatButton(_ sender: Any) {
+    @IBAction func publicarButton(_ sender: Any) {
         
         
         
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
