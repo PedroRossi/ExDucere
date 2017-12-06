@@ -12,6 +12,8 @@ class AddPostViewController: UIViewController{
     
     @IBOutlet weak var livroView: UIView!
     @IBOutlet weak var linkView: UIView!
+    @IBOutlet weak var musicaView: UIView!
+    @IBOutlet weak var atividadeView: UIView!
     
     
     
@@ -24,9 +26,23 @@ class AddPostViewController: UIViewController{
         case 0:
             livroView.isHidden = false
             linkView.isHidden = true
+            musicaView.isHidden = true
+            atividadeView.isHidden = true
         case 1:
             livroView.isHidden = true
             linkView.isHidden = false
+            musicaView.isHidden = true
+            atividadeView.isHidden = true
+        case 2:
+            livroView.isHidden = true
+            linkView.isHidden = true
+            musicaView.isHidden = false
+            atividadeView.isHidden = true
+        case 3:
+            livroView.isHidden = true
+            linkView.isHidden = true
+            musicaView.isHidden = true
+            atividadeView.isHidden = false
         default:
             break
         }
@@ -38,6 +54,8 @@ class AddPostViewController: UIViewController{
         
         livroView.isHidden = false
         linkView.isHidden = true
+        musicaView.isHidden = true
+        atividadeView.isHidden = true
         
         // Do any additional setup after loading the view.
     }

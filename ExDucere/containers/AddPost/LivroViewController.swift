@@ -10,7 +10,7 @@ import UIKit
 
 class LivroViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
-    var disciplinas:[String] = ["Português", "Matemática", "História", "Geografia", "Biologia", "Literatura","Religião","Inglês","Francês","Latim"]
+    var disciplinas:[String] = ["Português", "Matemática", "História", "Geografia", "Biologia", "Literatura","Religião","Inglês","Francês","Latim","Música"]
     var faixasIdade:[String] = ["3 a 5","5 a 7","7 a 9","9 a 11","11 a 13","13 a 15","15 a 17"]
 
     //label

@@ -1,14 +1,14 @@
 //
-//  LinkViewController.swift
+//  MusicaViewController.swift
 //  ExDucere
 //
-//  Created by Arthur Barcellos Lopes de Lima on 12/5/17.
+//  Created by Arthur Barcellos Lopes de Lima on 12/6/17.
 //  Copyright © 2017 Pedro Gonçalves Rossi Rodrigues. All rights reserved.
 //
 
 import UIKit
 
-class LinkViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class MusicaViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     var disciplinas:[String] = ["Português", "Matemática", "História", "Geografia", "Biologia", "Literatura","Religião","Inglês","Francês","Latim","Música"]
     var faixasIdade:[String] = ["3 a 5","5 a 7","7 a 9","9 a 11","11 a 13","13 a 15","15 a 17"]
@@ -21,7 +21,7 @@ class LinkViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     @IBOutlet weak var picker: UIPickerView!
     
     
-    @IBAction func silderIdade(_ sender: UISlider) {
+    @IBAction func sliderIdade(_ sender: UISlider) {
         
         valorIdade.text = faixasIdade[Int(sender.value)]
         
@@ -35,7 +35,8 @@ class LinkViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         
         
     }
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -50,7 +51,7 @@ class LinkViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         
         return 1
@@ -68,7 +69,7 @@ class LinkViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         return disciplinas[row]
         
     }
-    
+
     /*
     // MARK: - Navigation
 
