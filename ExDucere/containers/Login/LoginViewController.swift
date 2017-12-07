@@ -8,6 +8,8 @@
 
 import UIKit
 import FBSDKLoginKit
+import FirebaseAuth
+import FirebaseDatabase
 
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
@@ -18,6 +20,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         let loginButton: FBSDKLoginButton = FBSDKLoginButton()
         let center = fbLoginButton.center
         loginButton.center = center
+        loginButton.readPermissions = ["email", "public_profile"]
         self.view.addSubview(loginButton)
         loginButton.delegate = self
     }
@@ -27,12 +30,8 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func fbLogin(_ sender: Any) {
-        
-    }
-    
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
-        print("User Logged In")
+        // user logged in
         if let error = error {
             print(error.localizedDescription)
             return
@@ -41,14 +40,32 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         } else {
             // If you ask for multiple permissions at once, you
             // should check if specific permissions missing
+            // print("User logged in")
             if result.grantedPermissions.contains("email") {
-                // Do work
+                let credential = FacebookAuthProvider.credential(withAccessToken: result.token.tokenString)
+                Auth.auth().signIn(with: credential) { (user, error) in
+                    if let error = error {
+                        print(error)
+                        return
+                    }
+                    if let name = user?.displayName {
+                        var ref: DatabaseReference!
+                        ref = Database.database().reference()
+                        ref.child("users").child((user?.uid)!).observeSingleEvent(of: .value, with: { (snapshot) in
+                            if snapshot.exists() {
+                                
+                            } else {
+                                ref.child("users").child((user?.uid)!).setValue(["name": name])
+                            }
+                        })
+                    }
+                }
             }
         }
     }
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
-        print("User Logged Out")
+        // print("User Logged Out")
     }
 
     /*
