@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03A7D8FF1FD98BAA003F3C23 /* AddRecommendation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A7D8FE1FD98BA8003F3C23 /* AddRecommendation.storyboard */; };
+		03A7D9031FD98DDD003F3C23 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A7D9021FD98DDB003F3C23 /* Home.storyboard */; };
+		03A7D9071FD98E32003F3C23 /* MyRecommendations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A7D9061FD98E31003F3C23 /* MyRecommendations.storyboard */; };
 		03D595FE1FCD8EE5004F04AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D595FD1FCD8EE5004F04AE /* AppDelegate.swift */; };
 		03D596031FCD8EE5004F04AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D596011FCD8EE5004F04AE /* Main.storyboard */; };
 		03D596051FCD8EE5004F04AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D596041FCD8EE5004F04AE /* Assets.xcassets */; };
@@ -46,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03A7D8FD1FD98BA8003F3C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AddRecommendation.storyboard; sourceTree = "<group>"; };
+		03A7D9011FD98DDB003F3C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		03A7D9051FD98E31003F3C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MyRecommendations.storyboard; sourceTree = "<group>"; };
 		03D595FA1FCD8EE5004F04AE /* ExDucere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExDucere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D595FD1FCD8EE5004F04AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03D596021FCD8EE5004F04AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -137,6 +143,9 @@
 				03F9A5F81FCD9A010050519A /* GoogleService-Info.plist */,
 				03D595FD1FCD8EE5004F04AE /* AppDelegate.swift */,
 				03D596011FCD8EE5004F04AE /* Main.storyboard */,
+				03A7D8FE1FD98BA8003F3C23 /* AddRecommendation.storyboard */,
+				03A7D9021FD98DDB003F3C23 /* Home.storyboard */,
+				03A7D9061FD98E31003F3C23 /* MyRecommendations.storyboard */,
 				03D596041FCD8EE5004F04AE /* Assets.xcassets */,
 				03D596061FCD8EE5004F04AE /* LaunchScreen.storyboard */,
 				03D596091FCD8EE5004F04AE /* Info.plist */,
@@ -356,10 +365,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A7D8FF1FD98BAA003F3C23 /* AddRecommendation.storyboard in Resources */,
 				03D596081FCD8EE5004F04AE /* LaunchScreen.storyboard in Resources */,
 				03F9A5F91FCD9A010050519A /* GoogleService-Info.plist in Resources */,
+				03A7D9031FD98DDD003F3C23 /* Home.storyboard in Resources */,
 				03D596051FCD8EE5004F04AE /* Assets.xcassets in Resources */,
 				03D596031FCD8EE5004F04AE /* Main.storyboard in Resources */,
+				03A7D9071FD98E32003F3C23 /* MyRecommendations.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +603,33 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		03A7D8FE1FD98BA8003F3C23 /* AddRecommendation.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03A7D8FD1FD98BA8003F3C23 /* Base */,
+			);
+			name = AddRecommendation.storyboard;
+			path = /Users/pgrr/Desktop/ExDucere/ExDucere;
+			sourceTree = "<absolute>";
+		};
+		03A7D9021FD98DDB003F3C23 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03A7D9011FD98DDB003F3C23 /* Base */,
+			);
+			name = Home.storyboard;
+			path = /Users/pgrr/Desktop/ExDucere/ExDucere;
+			sourceTree = "<absolute>";
+		};
+		03A7D9061FD98E31003F3C23 /* MyRecommendations.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03A7D9051FD98E31003F3C23 /* Base */,
+			);
+			name = MyRecommendations.storyboard;
+			path = /Users/pgrr/Desktop/ExDucere/ExDucere;
+			sourceTree = "<absolute>";
+		};
 		03D596011FCD8EE5004F04AE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

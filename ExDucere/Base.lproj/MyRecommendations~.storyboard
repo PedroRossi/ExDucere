@@ -76,6 +76,22 @@
             </objects>
             <point key="canvasLocation" x="-569" y="367"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="HRR-aR-pSe">
+            <objects>
+                <viewController id="TfQ-wx-tja" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JAB-sY-DG1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="5gv-ev-gib"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ioS-Qa-74W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZN-YO-5Hp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3946" y="1223"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5xY-1J-jSW">
             <objects>
@@ -283,22 +299,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ZRr-sP-ms4" kind="relationship" relationship="rootViewController" id="bhi-kb-T4i"/>
+                        <segue destination="TfQ-wx-tja" kind="relationship" relationship="rootViewController" id="bhi-kb-T4i"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLJ-m3-5OV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3099.1999999999998" y="1223.3883058470765"/>
-        </scene>
-        <!--MyRecommendations-->
-        <scene sceneID="cbZ-ND-Ymn">
-            <objects>
-                <viewControllerPlaceholder storyboardName="MyRecommendations" id="ZRr-sP-ms4" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="VZN-39-3yL"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e5Q-qY-cvM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3946" y="1223"/>
         </scene>
     </scenes>
     <resources>
