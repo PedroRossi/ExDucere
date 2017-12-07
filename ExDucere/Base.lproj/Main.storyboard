@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kjb-E5-aDf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kjb-E5-aDf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -837,6 +837,7 @@
                             <constraint firstItem="YvG-oS-JWc" firstAttribute="leading" secondItem="go1-HZ-Sxb" secondAttribute="leading" id="lGg-tl-v5i"/>
                             <constraint firstAttribute="trailing" secondItem="YvG-oS-JWc" secondAttribute="trailing" id="xRs-ST-cl5"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="jiX-v3-rPB"/>
                     </view>
                     <size key="freeformSize" width="375" height="950"/>
                     <connections>
@@ -1001,6 +1002,7 @@
                             <constraint firstItem="QOT-Ew-ecu" firstAttribute="width" secondItem="UwQ-qY-WCQ" secondAttribute="width" id="iQp-Xv-0Mk"/>
                             <constraint firstAttribute="trailing" secondItem="WOD-aO-CAu" secondAttribute="trailing" id="kjm-vd-ymh"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="8sD-Yi-JeF"/>
                     </view>
                     <size key="freeformSize" width="375" height="772"/>
                     <connections>
