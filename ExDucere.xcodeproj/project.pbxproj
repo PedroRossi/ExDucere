@@ -18,6 +18,8 @@
 		03F9A6021FCD9D6C0050519A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F9A6011FCD9D6C0050519A /* SignupViewController.swift */; };
 		32B1DBFF8D241C740B35F696 /* Pods_ExDucereTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2575AC90D86CF5F0A582F3 /* Pods_ExDucereTests.framework */; };
 		7A3A0202E61693462FFD808D /* Pods_ExDucereUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342F00950FE845306853C2EB /* Pods_ExDucereUITests.framework */; };
+		8E22A27D1FD9677500E0B8DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E22A27C1FD9677500E0B8DE /* HomeViewController.swift */; };
+		8E22A27F1FD96EFE00E0B8DE /* HomeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E22A27E1FD96EFE00E0B8DE /* HomeCellTableViewCell.swift */; };
 		8E2CD2961FD6C33900B6EEE5 /* LivroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2CD2951FD6C33800B6EEE5 /* LivroViewController.swift */; };
 		8E2CD2981FD6D30600B6EEE5 /* LinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2CD2971FD6D30600B6EEE5 /* LinkViewController.swift */; };
 		8E8508E41FD199F90041B558 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8508E31FD199F90041B558 /* AddPostViewController.swift */; };
@@ -63,6 +65,8 @@
 		342F00950FE845306853C2EB /* Pods_ExDucereUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExDucereUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B6E9987A68BF02065270DE /* Pods-ExDucereTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDucereTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExDucereTests/Pods-ExDucereTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81043D6DB36CEC3A3D08B7FA /* Pods-ExDucereUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDucereUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExDucereUITests/Pods-ExDucereUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E22A27C1FD9677500E0B8DE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8E22A27E1FD96EFE00E0B8DE /* HomeCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellTableViewCell.swift; sourceTree = "<group>"; };
 		8E2CD2951FD6C33800B6EEE5 /* LivroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivroViewController.swift; sourceTree = "<group>"; };
 		8E2CD2971FD6D30600B6EEE5 /* LinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkViewController.swift; sourceTree = "<group>"; };
 		8E8508E31FD199F90041B558 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 		03F9A5FB1FCD9C380050519A /* containers */ = {
 			isa = PBXGroup;
 			children = (
+				8E22A27B1FD9666700E0B8DE /* Home */,
 				8E8508E21FD199AA0041B558 /* AddPost */,
 				03F9A6001FCD9D5B0050519A /* Signup */,
 				03F9A5FC1FCD9C640050519A /* Login */,
@@ -202,6 +207,15 @@
 				E63518FBED8EF2D81B99B801 /* Pods-ExDucereUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E22A27B1FD9666700E0B8DE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8E22A27C1FD9677500E0B8DE /* HomeViewController.swift */,
+				8E22A27E1FD96EFE00E0B8DE /* HomeCellTableViewCell.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		8E8508E21FD199AA0041B558 /* AddPost */ = {
@@ -528,9 +542,11 @@
 			files = (
 				8E8508E41FD199F90041B558 /* AddPostViewController.swift in Sources */,
 				03F9A6021FCD9D6C0050519A /* SignupViewController.swift in Sources */,
+				8E22A27F1FD96EFE00E0B8DE /* HomeCellTableViewCell.swift in Sources */,
 				8EDA6F1B1FD85DB9006DFA63 /* AtividadeViewController.swift in Sources */,
 				8EDA6F191FD85C58006DFA63 /* MusicaViewController.swift in Sources */,
 				8E2CD2981FD6D30600B6EEE5 /* LinkViewController.swift in Sources */,
+				8E22A27D1FD9677500E0B8DE /* HomeViewController.swift in Sources */,
 				03F9A5FE1FCD9C8A0050519A /* LoginViewController.swift in Sources */,
 				8E2CD2961FD6C33900B6EEE5 /* LivroViewController.swift in Sources */,
 				03D595FE1FCD8EE5004F04AE /* AppDelegate.swift in Sources */,
