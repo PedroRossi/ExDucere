@@ -25,10 +25,10 @@
 		8EDA6F191FD85C58006DFA63 /* MusicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDA6F181FD85C58006DFA63 /* MusicaViewController.swift */; };
 		8EDA6F1B1FD85DB9006DFA63 /* AtividadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDA6F1A1FD85DB9006DFA63 /* AtividadeViewController.swift */; };
 		AFF6670287896ADB8ED6C7D7 /* Pods_ExDucere.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F5A8FDBB242169B4786C8E /* Pods_ExDucere.framework */; };
+		D370160E1FDDC95D007C6B66 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D370160D1FDDC95D007C6B66 /* GoogleService-Info.plist */; };
 		DF7C28CF1FDD6C3900110458 /* MyRecommendations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28C31FDD6C3900110458 /* MyRecommendations.storyboard */; };
 		DF7C28D01FDD6C3900110458 /* AddRecommendation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28C51FDD6C3900110458 /* AddRecommendation.storyboard */; };
 		DF7C28D11FDD6C3900110458 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28C71FDD6C3900110458 /* Home.storyboard */; };
-		DF7C28E11FDD826F00110458 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28E01FDD826F00110458 /* GoogleService-Info.plist */; };
 		DF7C28E31FDD877D00110458 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7C28E21FDD877D00110458 /* DetailsViewController.swift */; };
 		DF7C28E51FDD953600110458 /* FilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28E41FDD953600110458 /* FilterView.xib */; };
 		DF7C28E71FDD95CA00110458 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7C28E61FDD95CA00110458 /* FilterView.swift */; };
@@ -81,10 +81,10 @@
 		C3866269C114CFD939F2B73B /* Pods-ExDucere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDucere.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExDucere/Pods-ExDucere.release.xcconfig"; sourceTree = "<group>"; };
 		CF2575AC90D86CF5F0A582F3 /* Pods_ExDucereTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExDucereTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF944113061B38E0370AF917 /* Pods-ExDucereTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDucereTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExDucereTests/Pods-ExDucereTests.release.xcconfig"; sourceTree = "<group>"; };
+		D370160D1FDDC95D007C6B66 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../ExDucere-master/ExDucere/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DF7C28C41FDD6C3900110458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MyRecommendations.storyboard; sourceTree = "<group>"; };
 		DF7C28C61FDD6C3900110458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AddRecommendation.storyboard; sourceTree = "<group>"; };
 		DF7C28C81FDD6C3900110458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
-		DF7C28E01FDD826F00110458 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Documents/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DF7C28E21FDD877D00110458 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		DF7C28E41FDD953600110458 /* FilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterView.xib; sourceTree = "<group>"; };
 		DF7C28E61FDD95CA00110458 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 				03D596041FCD8EE5004F04AE /* Assets.xcassets */,
 				03D596061FCD8EE5004F04AE /* LaunchScreen.storyboard */,
 				03D596091FCD8EE5004F04AE /* Info.plist */,
-				DF7C28E01FDD826F00110458 /* GoogleService-Info.plist */,
+				D370160D1FDDC95D007C6B66 /* GoogleService-Info.plist */,
 			);
 			path = ExDucere;
 			sourceTree = "<group>";
@@ -367,11 +367,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF7C28E51FDD953600110458 /* FilterView.xib in Resources */,
+				D370160E1FDDC95D007C6B66 /* GoogleService-Info.plist in Resources */,
 				DF7C28D01FDD6C3900110458 /* AddRecommendation.storyboard in Resources */,
 				03D596081FCD8EE5004F04AE /* LaunchScreen.storyboard in Resources */,
 				DF7C28CF1FDD6C3900110458 /* MyRecommendations.storyboard in Resources */,
 				DF7C28D11FDD6C3900110458 /* Home.storyboard in Resources */,
-				DF7C28E11FDD826F00110458 /* GoogleService-Info.plist in Resources */,
 				03D596051FCD8EE5004F04AE /* Assets.xcassets in Resources */,
 				03D596031FCD8EE5004F04AE /* Main.storyboard in Resources */,
 			);
