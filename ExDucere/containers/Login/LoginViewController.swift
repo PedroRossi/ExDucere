@@ -13,15 +13,15 @@ import FirebaseDatabase
 
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
-    @IBOutlet weak var fbLoginButton: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         let loginButton: FBSDKLoginButton = FBSDKLoginButton()
-        let center = fbLoginButton.center
-        loginButton.center = center
         loginButton.readPermissions = ["email", "public_profile"]
-        self.view.addSubview(loginButton)
+        if let view = self.view.viewWithTag(100) {
+            let center = view.center
+            loginButton.center = center
+            view.addSubview(loginButton)
+        }
         loginButton.delegate = self
     }
 
