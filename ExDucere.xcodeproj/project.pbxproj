@@ -31,7 +31,8 @@
 		DF7C28D21FDD6C3900110458 /* MyRecommendations~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28C91FDD6C3900110458 /* MyRecommendations~.storyboard */; };
 		DF7C28D31FDD6C3900110458 /* AddRecommendation~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28CB1FDD6C3900110458 /* AddRecommendation~.storyboard */; };
 		DF7C28D41FDD6C3900110458 /* Home~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28CD1FDD6C3900110458 /* Home~.storyboard */; };
-		DF7C28D61FDD6C7D00110458 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28D51FDD6C7D00110458 /* GoogleService-Info.plist */; };
+		DF7C28E11FDD826F00110458 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28E01FDD826F00110458 /* GoogleService-Info.plist */; };
+		DF7C28E31FDD877D00110458 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7C28E21FDD877D00110458 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +88,8 @@
 		DF7C28CA1FDD6C3900110458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/MyRecommendations~.storyboard"; sourceTree = "<group>"; };
 		DF7C28CC1FDD6C3900110458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/AddRecommendation~.storyboard"; sourceTree = "<group>"; };
 		DF7C28CE1FDD6C3900110458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Home~.storyboard"; sourceTree = "<group>"; };
-		DF7C28D51FDD6C7D00110458 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DF7C28E01FDD826F00110458 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Documents/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DF7C28E21FDD877D00110458 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		E63518FBED8EF2D81B99B801 /* Pods-ExDucereUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDucereUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExDucereUITests/Pods-ExDucereUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,8 +157,8 @@
 				DF7C28C91FDD6C3900110458 /* MyRecommendations~.storyboard */,
 				03D596041FCD8EE5004F04AE /* Assets.xcassets */,
 				03D596061FCD8EE5004F04AE /* LaunchScreen.storyboard */,
-				DF7C28D51FDD6C7D00110458 /* GoogleService-Info.plist */,
 				03D596091FCD8EE5004F04AE /* Info.plist */,
+				DF7C28E01FDD826F00110458 /* GoogleService-Info.plist */,
 			);
 			path = ExDucere;
 			sourceTree = "<group>";
@@ -224,6 +226,7 @@
 			children = (
 				8E22A27C1FD9677500E0B8DE /* HomeViewController.swift */,
 				8E22A27E1FD96EFE00E0B8DE /* HomeCellTableViewCell.swift */,
+				DF7C28E21FDD877D00110458 /* DetailsViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -373,7 +376,7 @@
 				DF7C28CF1FDD6C3900110458 /* MyRecommendations.storyboard in Resources */,
 				DF7C28D21FDD6C3900110458 /* MyRecommendations~.storyboard in Resources */,
 				DF7C28D11FDD6C3900110458 /* Home.storyboard in Resources */,
-				DF7C28D61FDD6C7D00110458 /* GoogleService-Info.plist in Resources */,
+				DF7C28E11FDD826F00110458 /* GoogleService-Info.plist in Resources */,
 				03D596051FCD8EE5004F04AE /* Assets.xcassets in Resources */,
 				03D596031FCD8EE5004F04AE /* Main.storyboard in Resources */,
 			);
@@ -478,8 +481,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ExDucere/Pods-ExDucere-resources.sh",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseFacebookAuthUI.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -569,6 +572,7 @@
 				8E8508E41FD199F90041B558 /* AddPostViewController.swift in Sources */,
 				03F9A6021FCD9D6C0050519A /* SignupViewController.swift in Sources */,
 				8E22A27F1FD96EFE00E0B8DE /* HomeCellTableViewCell.swift in Sources */,
+				DF7C28E31FDD877D00110458 /* DetailsViewController.swift in Sources */,
 				8EDA6F1B1FD85DB9006DFA63 /* AtividadeViewController.swift in Sources */,
 				8EDA6F191FD85C58006DFA63 /* MusicaViewController.swift in Sources */,
 				8E2CD2981FD6D30600B6EEE5 /* LinkViewController.swift in Sources */,
