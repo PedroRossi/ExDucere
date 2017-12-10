@@ -9,7 +9,8 @@
 import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    @IBOutlet weak var segmentControlFilter: UISegmentedControl!
+    
     let list:[String] = ["João", "Maria", "Fernando", "Alice", "José"]
     
     
@@ -39,14 +40,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

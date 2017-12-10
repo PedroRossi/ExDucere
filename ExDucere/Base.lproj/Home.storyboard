@@ -21,9 +21,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <segmentedControl key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" id="HCz-qo-ILi">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <segments>
+                                        <segment title="Assunto"/>
+                                        <segment title="Faixa Etária"/>
+                                        <segment title="Tipo de Material"/>
+                                    </segments>
+                                    <color key="tintColor" red="0.00078190804924815893" green="0.21416562795639038" blue="0.010346886701881886" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </segmentedControl>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="mN6-xG-1jD" customClass="HomeCellTableViewCell" customModule="ExDucere" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                        <rect key="frame" x="0.0" y="58" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mN6-xG-1jD" id="SDK-DZ-qJF">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
@@ -74,10 +84,13 @@
                         <viewLayoutGuide key="safeArea" id="KiG-fu-Wpu"/>
                     </view>
                     <navigationItem key="navigationItem" id="0xR-ll-B7f"/>
+                    <connections>
+                        <outlet property="segmentControlFilter" destination="HCz-qo-ILi" id="Ol1-gU-LN3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Y7-P3-Dgk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4018" y="-401"/>
+            <point key="canvasLocation" x="4016.8000000000002" y="-401.64917541229386"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="Lq2-G2-hAF">

@@ -28,11 +28,10 @@
 		DF7C28CF1FDD6C3900110458 /* MyRecommendations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28C31FDD6C3900110458 /* MyRecommendations.storyboard */; };
 		DF7C28D01FDD6C3900110458 /* AddRecommendation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28C51FDD6C3900110458 /* AddRecommendation.storyboard */; };
 		DF7C28D11FDD6C3900110458 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28C71FDD6C3900110458 /* Home.storyboard */; };
-		DF7C28D21FDD6C3900110458 /* MyRecommendations~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28C91FDD6C3900110458 /* MyRecommendations~.storyboard */; };
-		DF7C28D31FDD6C3900110458 /* AddRecommendation~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28CB1FDD6C3900110458 /* AddRecommendation~.storyboard */; };
-		DF7C28D41FDD6C3900110458 /* Home~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28CD1FDD6C3900110458 /* Home~.storyboard */; };
 		DF7C28E11FDD826F00110458 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28E01FDD826F00110458 /* GoogleService-Info.plist */; };
 		DF7C28E31FDD877D00110458 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7C28E21FDD877D00110458 /* DetailsViewController.swift */; };
+		DF7C28E51FDD953600110458 /* FilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28E41FDD953600110458 /* FilterView.xib */; };
+		DF7C28E71FDD95CA00110458 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7C28E61FDD95CA00110458 /* FilterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,11 +84,10 @@
 		DF7C28C41FDD6C3900110458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MyRecommendations.storyboard; sourceTree = "<group>"; };
 		DF7C28C61FDD6C3900110458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AddRecommendation.storyboard; sourceTree = "<group>"; };
 		DF7C28C81FDD6C3900110458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
-		DF7C28CA1FDD6C3900110458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/MyRecommendations~.storyboard"; sourceTree = "<group>"; };
-		DF7C28CC1FDD6C3900110458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/AddRecommendation~.storyboard"; sourceTree = "<group>"; };
-		DF7C28CE1FDD6C3900110458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Home~.storyboard"; sourceTree = "<group>"; };
 		DF7C28E01FDD826F00110458 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Documents/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DF7C28E21FDD877D00110458 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		DF7C28E41FDD953600110458 /* FilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterView.xib; sourceTree = "<group>"; };
+		DF7C28E61FDD95CA00110458 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		E63518FBED8EF2D81B99B801 /* Pods-ExDucereUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDucereUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExDucereUITests/Pods-ExDucereUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,11 +148,8 @@
 				03D595FD1FCD8EE5004F04AE /* AppDelegate.swift */,
 				03D596011FCD8EE5004F04AE /* Main.storyboard */,
 				DF7C28C51FDD6C3900110458 /* AddRecommendation.storyboard */,
-				DF7C28CB1FDD6C3900110458 /* AddRecommendation~.storyboard */,
 				DF7C28C71FDD6C3900110458 /* Home.storyboard */,
-				DF7C28CD1FDD6C3900110458 /* Home~.storyboard */,
 				DF7C28C31FDD6C3900110458 /* MyRecommendations.storyboard */,
-				DF7C28C91FDD6C3900110458 /* MyRecommendations~.storyboard */,
 				03D596041FCD8EE5004F04AE /* Assets.xcassets */,
 				03D596061FCD8EE5004F04AE /* LaunchScreen.storyboard */,
 				03D596091FCD8EE5004F04AE /* Info.plist */,
@@ -227,6 +222,8 @@
 				8E22A27C1FD9677500E0B8DE /* HomeViewController.swift */,
 				8E22A27E1FD96EFE00E0B8DE /* HomeCellTableViewCell.swift */,
 				DF7C28E21FDD877D00110458 /* DetailsViewController.swift */,
+				DF7C28E41FDD953600110458 /* FilterView.xib */,
+				DF7C28E61FDD95CA00110458 /* FilterView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -369,12 +366,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF7C28D31FDD6C3900110458 /* AddRecommendation~.storyboard in Resources */,
-				DF7C28D41FDD6C3900110458 /* Home~.storyboard in Resources */,
+				DF7C28E51FDD953600110458 /* FilterView.xib in Resources */,
 				DF7C28D01FDD6C3900110458 /* AddRecommendation.storyboard in Resources */,
 				03D596081FCD8EE5004F04AE /* LaunchScreen.storyboard in Resources */,
 				DF7C28CF1FDD6C3900110458 /* MyRecommendations.storyboard in Resources */,
-				DF7C28D21FDD6C3900110458 /* MyRecommendations~.storyboard in Resources */,
 				DF7C28D11FDD6C3900110458 /* Home.storyboard in Resources */,
 				DF7C28E11FDD826F00110458 /* GoogleService-Info.plist in Resources */,
 				03D596051FCD8EE5004F04AE /* Assets.xcassets in Resources */,
@@ -573,6 +568,7 @@
 				03F9A6021FCD9D6C0050519A /* SignupViewController.swift in Sources */,
 				8E22A27F1FD96EFE00E0B8DE /* HomeCellTableViewCell.swift in Sources */,
 				DF7C28E31FDD877D00110458 /* DetailsViewController.swift in Sources */,
+				DF7C28E71FDD95CA00110458 /* FilterView.swift in Sources */,
 				8EDA6F1B1FD85DB9006DFA63 /* AtividadeViewController.swift in Sources */,
 				8EDA6F191FD85C58006DFA63 /* MusicaViewController.swift in Sources */,
 				8E2CD2981FD6D30600B6EEE5 /* LinkViewController.swift in Sources */,
@@ -653,30 +649,6 @@
 				DF7C28C81FDD6C3900110458 /* Base */,
 			);
 			name = Home.storyboard;
-			sourceTree = "<group>";
-		};
-		DF7C28C91FDD6C3900110458 /* MyRecommendations~.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF7C28CA1FDD6C3900110458 /* Base */,
-			);
-			name = "MyRecommendations~.storyboard";
-			sourceTree = "<group>";
-		};
-		DF7C28CB1FDD6C3900110458 /* AddRecommendation~.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF7C28CC1FDD6C3900110458 /* Base */,
-			);
-			name = "AddRecommendation~.storyboard";
-			sourceTree = "<group>";
-		};
-		DF7C28CD1FDD6C3900110458 /* Home~.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF7C28CE1FDD6C3900110458 /* Base */,
-			);
-			name = "Home~.storyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
