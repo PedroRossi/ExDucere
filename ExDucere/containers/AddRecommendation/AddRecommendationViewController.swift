@@ -106,7 +106,12 @@ class AddRecommendationViewController: UIViewController, UIPickerViewDataSource,
         let ref = Database.database().reference()
         var data = [String: Any]()
         data = ["owner": owner!,"type":type,"subject":subject,"topic":topic,"min_age":ageRange.0,"max_age":ageRange.1,"description":description,"guide":guide,"rank":rank]
-        // print(data)
+        for param in data {
+            if (String(describing: param.value) == "") {
+                sendAlert(title: "Erro de Validação", message: "Por favor preencha todos os campos!")
+                return;
+            }
+        }
         ref.child("recommendations").childByAutoId().setValue(data)
         self.navigationController?.tabBarController?.selectedIndex = 2
         self.cleanFields()
@@ -123,6 +128,13 @@ class AddRecommendationViewController: UIViewController, UIPickerViewDataSource,
         descriptionLabel.text = "Livro/Autor/Editora:"
         descriptionTextField.text = ""
         guideTextField.text = ""
+    }
+    
+    private func sendAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let cancel = UIAlertAction(title: "OK", style: .cancel , handler: nil)
+        alert.addAction(cancel)
+        present(alert, animated: true, completion: nil)
     }
     
     /*

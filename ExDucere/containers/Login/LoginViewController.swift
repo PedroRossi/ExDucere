@@ -13,6 +13,12 @@ import FirebaseDatabase
 
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
+    private func sendToTabBar() {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let tabBarController = storyBoard.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
+        self.present(tabBarController, animated: false, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let loginButton: FBSDKLoginButton = FBSDKLoginButton()
@@ -42,6 +48,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
             // If you ask for multiple permissions at once, you
             // should check if specific permissions missing
             // print("User logged in")
+            self.sendToTabBar()
             if result.grantedPermissions.contains("email") {
                 let credential = FacebookAuthProvider.credential(withAccessToken: result.token.tokenString)
                 Auth.auth().signIn(with: credential) { (user, error) in
@@ -53,9 +60,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
                         var ref: DatabaseReference!
                         ref = Database.database().reference()
                         ref.child("users").child((user?.uid)!).observeSingleEvent(of: .value, with: { (snapshot) in
-                            if snapshot.exists() {
-                                
-                            } else {
+                            if !snapshot.exists() {
                                 ref.child("users").child((user?.uid)!).setValue(["name": name])
                             }
                         })

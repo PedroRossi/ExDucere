@@ -17,7 +17,13 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var senha: UITextField!
     @IBOutlet weak var senhaConfirmada: UITextField!
     
-    @IBAction func cadastrarUsuario(_ sender: Any) {
+    private func sendToTabBar() {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let tabBarController = storyBoard.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
+        self.present(tabBarController, animated: false, completion: nil)
+    }
+    
+    @IBAction func signUpUser(_ sender: Any) {
         
         //Recuperar dados digitados
         if let nomeRecuperado = self.nome.text{
@@ -35,11 +41,10 @@ class SignupViewController: UIViewController {
                                     var ref: DatabaseReference!
                                     ref = Database.database().reference()
                                     ref.child("users").child((user?.uid)!).observeSingleEvent(of: .value, with: { (snapshot) in
-                                        if snapshot.exists() {
-                                            
-                                        } else {
+                                        if !snapshot.exists() {
                                             ref.child("users").child((user?.uid)!).setValue(["name": nomeRecuperado])
                                         }
+                                        self.sendToTabBar()
                                     })
                                 }
                                 else{
