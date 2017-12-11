@@ -21,11 +21,12 @@
 		8E22A27F1FD96EFE00E0B8DE /* HomeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E22A27E1FD96EFE00E0B8DE /* HomeCellTableViewCell.swift */; };
 		8E2CD2961FD6C33900B6EEE5 /* LivroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2CD2951FD6C33800B6EEE5 /* LivroViewController.swift */; };
 		8E2CD2981FD6D30600B6EEE5 /* LinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2CD2971FD6D30600B6EEE5 /* LinkViewController.swift */; };
+		8E7756581FDE9F17002968E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E7756571FDE9F17002968E9 /* GoogleService-Info.plist */; };
+		8E77565A1FDEA864002968E9 /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7756591FDEA864002968E9 /* DataCell.swift */; };
 		8E8508E41FD199F90041B558 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8508E31FD199F90041B558 /* AddPostViewController.swift */; };
 		8EDA6F191FD85C58006DFA63 /* MusicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDA6F181FD85C58006DFA63 /* MusicaViewController.swift */; };
 		8EDA6F1B1FD85DB9006DFA63 /* AtividadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDA6F1A1FD85DB9006DFA63 /* AtividadeViewController.swift */; };
 		AFF6670287896ADB8ED6C7D7 /* Pods_ExDucere.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31F5A8FDBB242169B4786C8E /* Pods_ExDucere.framework */; };
-		D370160E1FDDC95D007C6B66 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D370160D1FDDC95D007C6B66 /* GoogleService-Info.plist */; };
 		DF7C28CF1FDD6C3900110458 /* MyRecommendations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28C31FDD6C3900110458 /* MyRecommendations.storyboard */; };
 		DF7C28D01FDD6C3900110458 /* AddRecommendation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28C51FDD6C3900110458 /* AddRecommendation.storyboard */; };
 		DF7C28D11FDD6C3900110458 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7C28C71FDD6C3900110458 /* Home.storyboard */; };
@@ -74,6 +75,8 @@
 		8E22A27E1FD96EFE00E0B8DE /* HomeCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellTableViewCell.swift; sourceTree = "<group>"; };
 		8E2CD2951FD6C33800B6EEE5 /* LivroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivroViewController.swift; sourceTree = "<group>"; };
 		8E2CD2971FD6D30600B6EEE5 /* LinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkViewController.swift; sourceTree = "<group>"; };
+		8E7756571FDE9F17002968E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8E7756591FDEA864002968E9 /* DataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
 		8E8508E31FD199F90041B558 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		8EDA6F181FD85C58006DFA63 /* MusicaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaViewController.swift; sourceTree = "<group>"; };
 		8EDA6F1A1FD85DB9006DFA63 /* AtividadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtividadeViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +84,6 @@
 		C3866269C114CFD939F2B73B /* Pods-ExDucere.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDucere.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExDucere/Pods-ExDucere.release.xcconfig"; sourceTree = "<group>"; };
 		CF2575AC90D86CF5F0A582F3 /* Pods_ExDucereTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExDucereTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF944113061B38E0370AF917 /* Pods-ExDucereTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExDucereTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExDucereTests/Pods-ExDucereTests.release.xcconfig"; sourceTree = "<group>"; };
-		D370160D1FDDC95D007C6B66 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../ExDucere-master/ExDucere/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DF7C28C41FDD6C3900110458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MyRecommendations.storyboard; sourceTree = "<group>"; };
 		DF7C28C61FDD6C3900110458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AddRecommendation.storyboard; sourceTree = "<group>"; };
 		DF7C28C81FDD6C3900110458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		03D595FC1FCD8EE5004F04AE /* ExDucere */ = {
 			isa = PBXGroup;
 			children = (
+				8E7756571FDE9F17002968E9 /* GoogleService-Info.plist */,
 				03F9A5FB1FCD9C380050519A /* containers */,
 				03D595FD1FCD8EE5004F04AE /* AppDelegate.swift */,
 				03D596011FCD8EE5004F04AE /* Main.storyboard */,
@@ -153,7 +156,6 @@
 				03D596041FCD8EE5004F04AE /* Assets.xcassets */,
 				03D596061FCD8EE5004F04AE /* LaunchScreen.storyboard */,
 				03D596091FCD8EE5004F04AE /* Info.plist */,
-				D370160D1FDDC95D007C6B66 /* GoogleService-Info.plist */,
 			);
 			path = ExDucere;
 			sourceTree = "<group>";
@@ -224,6 +226,7 @@
 				DF7C28E21FDD877D00110458 /* DetailsViewController.swift */,
 				DF7C28E41FDD953600110458 /* FilterView.xib */,
 				DF7C28E61FDD95CA00110458 /* FilterView.swift */,
+				8E7756591FDEA864002968E9 /* DataCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -367,7 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF7C28E51FDD953600110458 /* FilterView.xib in Resources */,
-				D370160E1FDDC95D007C6B66 /* GoogleService-Info.plist in Resources */,
+				8E7756581FDE9F17002968E9 /* GoogleService-Info.plist in Resources */,
 				DF7C28D01FDD6C3900110458 /* AddRecommendation.storyboard in Resources */,
 				03D596081FCD8EE5004F04AE /* LaunchScreen.storyboard in Resources */,
 				DF7C28CF1FDD6C3900110458 /* MyRecommendations.storyboard in Resources */,
@@ -576,6 +579,7 @@
 				03F9A5FE1FCD9C8A0050519A /* LoginViewController.swift in Sources */,
 				8E2CD2961FD6C33900B6EEE5 /* LivroViewController.swift in Sources */,
 				03D595FE1FCD8EE5004F04AE /* AppDelegate.swift in Sources */,
+				8E77565A1FDEA864002968E9 /* DataCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

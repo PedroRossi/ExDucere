@@ -28,13 +28,7 @@ class MusicaViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
     
     //button
-    @IBOutlet weak var publicar: UIButton!
-    
-    @IBAction func publicarButton(_ sender: Any) {
-        
-        
-        
-    }
+
     
     
     override func viewDidLoad() {

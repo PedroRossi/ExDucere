@@ -31,9 +31,10 @@ class LivroViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     //button
     @IBOutlet weak var publicar: UIButton!
     
+    
     @IBAction func publicarButton(_ sender: Any) {
         
-        
+        dismiss(animated: true, completion: nil)
         
     }
     

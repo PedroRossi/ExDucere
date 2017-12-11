@@ -14,7 +14,11 @@ class HomeCellTableViewCell: UITableViewCell {
     @IBOutlet weak var assunto: UILabel!
     @IBOutlet weak var nome: UILabel!
     
+    @IBOutlet weak var avaliacao: UILabel!
+    @IBOutlet weak var faixaEtaria: UILabel!
+    
     @IBOutlet weak var imagem: UIImageView!
+    @IBOutlet weak var material: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

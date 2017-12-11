@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dVC-Uf-P2O">
-                                <rect key="frame" x="0.0" y="55" width="375" height="563"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="546"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -30,7 +30,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Jl-kZ-Hvx">
-                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                    <rect key="frame" x="15" y="11" width="64" height="64"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Disciplina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCA-AE-Q5J">
@@ -41,7 +41,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Assunto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSe-3U-kje">
-                                                    <rect key="frame" x="98" y="34" width="200" height="21"/>
+                                                    <rect key="frame" x="98" y="35" width="200" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -54,13 +54,39 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-christmas-star-50" translatesAutoresizingMaskIntoConstraints="NO" id="8TC-0k-OcB">
+                                                    <rect key="frame" x="340" y="11" width="20" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nn-nn anos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaC-pL-WUU">
+                                                    <rect key="frame" x="285" y="58" width="75" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyi-os-E2Q">
+                                                    <rect key="frame" x="335" y="35" width="25" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UO-pg-wNI">
+                                                    <rect key="frame" x="326" y="11" width="12" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="assunto" destination="NSe-3U-kje" id="7U8-Cp-cEs"/>
+                                            <outlet property="avaliacao" destination="6UO-pg-wNI" id="1vb-GX-pJ7"/>
                                             <outlet property="disciplina" destination="mCA-AE-Q5J" id="R3l-CC-RvB"/>
+                                            <outlet property="faixaEtaria" destination="GaC-pL-WUU" id="34M-Vz-n8u"/>
                                             <outlet property="imagem" destination="7Jl-kZ-Hvx" id="zAZ-MC-awh"/>
+                                            <outlet property="material" destination="hyi-os-E2Q" id="ysc-P2-wdW"/>
                                             <outlet property="nome" destination="R4N-PX-Bs1" id="jCI-Q0-Nw5"/>
+                                            <segue destination="Tus-uJ-lj6" kind="show" identifier="detalhePost" id="7k3-83-U2f"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -69,9 +95,12 @@
                                     <outlet property="delegate" destination="g1R-5B-OC8" id="8Uy-zV-fo9"/>
                                 </connections>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="HCz-qo-ILi">
-                                <rect key="frame" x="0.0" y="18" width="375" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="HCz-qo-ILi">
+                                <rect key="frame" x="0.0" y="35" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="R7H-Ak-Zks"/>
+                                    <constraint firstAttribute="width" constant="375" id="Z0A-vB-O0C"/>
+                                </constraints>
                                 <segments>
                                     <segment title="Assunto"/>
                                     <segment title="Faixa Etária"/>
@@ -84,6 +113,11 @@
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HCz-qo-ILi" firstAttribute="top" secondItem="bYU-J1-y4U" secondAttribute="top" constant="35" id="Chz-Ok-fGK"/>
+                            <constraint firstItem="HCz-qo-ILi" firstAttribute="centerX" secondItem="bYU-J1-y4U" secondAttribute="centerX" id="IcL-ZU-TtC"/>
+                            <constraint firstItem="HCz-qo-ILi" firstAttribute="centerX" secondItem="bYU-J1-y4U" secondAttribute="centerX" id="cO7-bg-q5t"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KiG-fu-Wpu"/>
                     </view>
                     <navigationItem key="navigationItem" id="0xR-ll-B7f"/>
@@ -196,7 +230,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eej-Cz-PMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4825" y="-81"/>
+            <point key="canvasLocation" x="4836" y="10"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-christmas-star-50" width="50" height="50"/>
+    </resources>
 </document>
