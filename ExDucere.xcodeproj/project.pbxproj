@@ -16,6 +16,7 @@
 		03D596081FCD8EE5004F04AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D596061FCD8EE5004F04AE /* LaunchScreen.storyboard */; };
 		03D596131FCD8EE6004F04AE /* ExDucereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D596121FCD8EE6004F04AE /* ExDucereTests.swift */; };
 		03D5961E1FCD8EE6004F04AE /* ExDucereUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5961D1FCD8EE6004F04AE /* ExDucereUITests.swift */; };
+		03E754F21FDDB4B200BA87C4 /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E754F11FDDB4B200BA87C4 /* Recommendation.swift */; };
 		03EDAE291FDD82FB0088A70C /* AddRecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EDAE281FDD82FB0088A70C /* AddRecommendationViewController.swift */; };
 		03F9A5F91FCD9A010050519A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03F9A5F81FCD9A010050519A /* GoogleService-Info.plist */; };
 		03F9A5FE1FCD9C8A0050519A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F9A5FD1FCD9C8A0050519A /* LoginViewController.swift */; };
@@ -60,6 +61,7 @@
 		03D596191FCD8EE6004F04AE /* ExDucereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExDucereUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D5961D1FCD8EE6004F04AE /* ExDucereUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDucereUITests.swift; sourceTree = "<group>"; };
 		03D5961F1FCD8EE6004F04AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03E754F11FDDB4B200BA87C4 /* Recommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommendation.swift; sourceTree = "<group>"; };
 		03EDAE281FDD82FB0088A70C /* AddRecommendationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecommendationViewController.swift; sourceTree = "<group>"; };
 		03F9A5F81FCD9A010050519A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		03F9A5FD1FCD9C8A0050519A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		03F9A5FA1FCD9C1B0050519A /* models */ = {
 			isa = PBXGroup;
 			children = (
+				03E754F11FDDB4B200BA87C4 /* Recommendation.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -461,9 +464,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ExDucere/Pods-ExDucere-resources.sh",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseFacebookAuthUI.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -549,6 +556,7 @@
 				03F9A6021FCD9D6C0050519A /* SignupViewController.swift in Sources */,
 				8E22A27F1FD96EFE00E0B8DE /* HomeCellTableViewCell.swift in Sources */,
 				03EDAE291FDD82FB0088A70C /* AddRecommendationViewController.swift in Sources */,
+				03E754F21FDDB4B200BA87C4 /* Recommendation.swift in Sources */,
 				8E22A27D1FD9677500E0B8DE /* HomeViewController.swift in Sources */,
 				03F9A5FE1FCD9C8A0050519A /* LoginViewController.swift in Sources */,
 				03D595FE1FCD8EE5004F04AE /* AppDelegate.swift in Sources */,
