@@ -8,9 +8,44 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
-    @IBOutlet weak var segmentControlFilter: UISegmentedControl!
+    var faixasIdade:[String] = ["3 a 5","5 a 7","7 a 9","9 a 11","11 a 13","13 a 15","15 a 17"]
+    var material:String = "livro"
+    
+    @IBOutlet weak var pesquisa: UITextField!
+    
+    //label idade
+    @IBOutlet weak var valorIdade: UILabel!
+    
+    //slider
+    @IBAction func sliderIdade(_ sender: UISlider) {
+        
+        valorIdade.text = faixasIdade[Int(sender.value)]
+        
+    }
+    
+    @IBOutlet weak var tipoMaterial: UISegmentedControl!
+    
+    @IBAction func escolherMaterial(_ sender: UISegmentedControl) {
+        
+        switch tipoMaterial.selectedSegmentIndex {
+        case 0:
+            material = "livro"
+        case 1:
+            material = "site"
+        case 2:
+            material = "musica"
+        case 3:
+            material = "atividade"
+        default:
+            break
+        }
+        
+        print(material)
+        
+    }
+    
     
     var dados:[DataCell] = []
     var filterView:FilterView!
@@ -18,6 +53,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.pesquisa.delegate = self
+        valorIdade.text = faixasIdade[0]
+        
         var dado:DataCell
         var dado1:DataCell
         var dado2:DataCell
@@ -25,12 +63,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         var dado4:DataCell
         var dado5:DataCell
         
-        dado = DataCell(disciplina: "Português", assunto: "Gramática", nome: "José Pereira", imagem: #imageLiteral(resourceName: "padrao_480"), avaliacao: "5", faixaEtaria: "3-5 anos", material: #imageLiteral(resourceName: "icons8-book-filled-50") )
-        dado1 = DataCell(disciplina: "Matemática", assunto: "Aritmética", nome: "João Augusto", imagem: #imageLiteral(resourceName: "padrao_480"), avaliacao: "4", faixaEtaria: "5-7 anos", material: #imageLiteral(resourceName: "icons8-internet-50"))
-        dado2 = DataCell(disciplina: "Música", assunto: "Compasso", nome: "Flávia Mozart", imagem: #imageLiteral(resourceName: "padrao_480"), avaliacao: "3", faixaEtaria: "7-9 anos", material: #imageLiteral(resourceName: "icons8-musical-notes-50"))
-        dado3 = DataCell(disciplina: "Francês", assunto: "Conjugaison des verbes", nome: "François Montand", imagem: #imageLiteral(resourceName: "padrao_480"), avaliacao: "4", faixaEtaria: "9-11 anos", material:#imageLiteral(resourceName: "icons8-idea-50"))
-        dado4 = DataCell(disciplina: "História", assunto: "História de Pernambuco", nome: "Henrique Dias", imagem: #imageLiteral(resourceName: "padrao_480"), avaliacao: "5", faixaEtaria: "11-14 anos", material:#imageLiteral(resourceName: "icons8-idea-50"))
-        dado5 = DataCell(disciplina: "Religião", assunto: "Catecismo", nome: "Maria de Lourdes", imagem: #imageLiteral(resourceName: "padrao_480"), avaliacao: "5", faixaEtaria: "7-9 anos", material: #imageLiteral(resourceName: "icons8-book-filled-50") )
+        dado = DataCell(disciplina: "Português", assunto: "Gramática", nome: "José Pereira", imagem: #imageLiteral(resourceName: "padrao_480"), avaliacao: "5", faixaEtaria: "3-5", material: #imageLiteral(resourceName: "icons8-book-filled-50") )
+        dado1 = DataCell(disciplina: "Matemática", assunto: "Aritmética", nome: "João Augusto", imagem: #imageLiteral(resourceName: "padrao_480"), avaliacao: "4", faixaEtaria: "5-7", material: #imageLiteral(resourceName: "icons8-internet-50"))
+        dado2 = DataCell(disciplina: "Música", assunto: "Compasso", nome: "Flávia Mozart", imagem: #imageLiteral(resourceName: "padrao_480"), avaliacao: "3", faixaEtaria: "7-9", material: #imageLiteral(resourceName: "icons8-musical-notes-50"))
+        dado3 = DataCell(disciplina: "Francês", assunto: "Conjugaison des verbes", nome: "François Montand", imagem: #imageLiteral(resourceName: "padrao_480"), avaliacao: "4", faixaEtaria: "9-11", material:#imageLiteral(resourceName: "icons8-idea-50"))
+        dado4 = DataCell(disciplina: "História", assunto: "História de Pernambuco", nome: "Henrique Dias", imagem: #imageLiteral(resourceName: "padrao_480"), avaliacao: "5", faixaEtaria: "11-14", material:#imageLiteral(resourceName: "icons8-idea-50"))
+        dado5 = DataCell(disciplina: "Religião", assunto: "Catecismo", nome: "Maria de Lourdes", imagem: #imageLiteral(resourceName: "padrao_480"), avaliacao: "5", faixaEtaria: "7-9", material: #imageLiteral(resourceName: "icons8-book-filled-50") )
         
         dados.append(dado)
         dados.append(dado1)
@@ -77,6 +115,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        return true
+        
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "detalhePost"{
@@ -86,32 +131,4 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
-    @IBAction func typeFilter(_ sender: Any) {
-        
-        if (filterView != nil){
-            filterView.view.removeFromSuperview()
-        }
-        
-        switch segmentControlFilter.selectedSegmentIndex {
-        case 0:
-            filterView = FilterView(frame: CGRect(x: 0, y: 50, width: 220, height: 414))
-            filterView.closeButton.addTarget(self, action:Selector(("closed:")), for: .touchUpInside)
-            self.view.addSubview(filterView)
-        case 1:
-            filterView = FilterView(frame: CGRect(x: 70, y: 50, width: 220, height: 414))
-            filterView.closeButton.addTarget(self, action: "closed:", for: UIControlEvents.touchUpInside)
-            self.view.addSubview(filterView)
-        case 2:
-            filterView = FilterView(frame: CGRect(x: 150, y: 50, width: 220, height: 414))
-            filterView.closeButton.addTarget(self, action: "closed:", for: UIControlEvents.touchUpInside)
-            self.view.addSubview(filterView)
-        default:
-            break
-        }
-    }
-    
-    func closed(sender:UIButton) {
-        print("closed its ok")
-        filterView.view.removeFromSuperview()
-    }
 }
