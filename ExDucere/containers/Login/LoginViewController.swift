@@ -11,7 +11,7 @@ import FBSDKLoginKit
 import FirebaseAuth
 import FirebaseDatabase
 
-class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
+class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -34,14 +34,24 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         let loginButton: FBSDKLoginButton = FBSDKLoginButton()
         loginButton.readPermissions = ["email", "public_profile"]
         if let view = self.view.viewWithTag(100) {
-            loginButton.frame = CGRect(x: view.frame.minX, y: view.frame.minY, width: view.bounds.size.width + 30, height: view.bounds.size.height)
-            loginButton.center.x = view.center.x + 14
+            loginButton.frame = CGRect(x: view.frame.minX, y: view.frame.minY, width: view.bounds.size.width, height: view.bounds.size.height)
+            loginButton.center.x = view.center.x
             loginButton.center.y = view.center.y - 50
             view.addSubview(loginButton)
         }
         loginButton.delegate = self
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
     }
 
+    // MARK: UITextFieldDelegate
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // Hide the keyboard
+        textField.resignFirstResponder()
+        return true
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

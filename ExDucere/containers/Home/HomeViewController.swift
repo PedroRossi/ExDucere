@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
     var faixasIdade:[String] = ["3 a 5","5 a 7","7 a 9","9 a 11","11 a 13","13 a 15","15 a 17"]
     var material:String = "livro"
+    
+    var ref: DatabaseReference!
     
     @IBOutlet weak var pesquisa: UITextField!
     
@@ -53,6 +56,36 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        ref = Database.database().reference()
+        ref.child("recommendations").observe(.value, with: { (snapshot: DataSnapshot) in
+            for child in snapshot.children {
+                break;
+                let snap = child as! DataSnapshot
+                let subject = snap.value(forKey: "subject") as! String
+                let topic = snap.value(forKey: "topic") as! String
+                let type = snap.value(forKey: "type") as! Int
+                let minAge = snap.value(forKey: "min_age") as! Int
+                let maxAge = snap.value(forKey: "max_age") as! Int
+                let ageRange = String(minAge) + "-" + String(maxAge)
+                var material: UIImage = #imageLiteral(resourceName: "icons8-book-filled-50")
+                switch (type) {
+                case 0:
+                    material = #imageLiteral(resourceName: "icons8-book-filled-50")
+                case 1:
+                    material = #imageLiteral(resourceName: "icons8-internet-50")
+                case 2:
+                    material = #imageLiteral(resourceName: "icons8-musical-notes-50")
+                case 3:
+                    material = #imageLiteral(resourceName: "icons8-idea-50")
+                default:
+                    break
+                }
+                let data = DataCell(disciplina: subject, assunto: topic, nome: "José Pereira", imagem: #imageLiteral(resourceName: "padrao_480"), avaliacao: "5", faixaEtaria: ageRange, material: material)
+                print(data)
+                // self.dados.append(data)
+            }
+        })
+        
         self.pesquisa.delegate = self
         valorIdade.text = faixasIdade[0]
         

@@ -10,7 +10,7 @@ import UIKit
 import FirebaseDatabase
 import FirebaseAuth
 
-class AddRecommendationViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
+class AddRecommendationViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate, UITextViewDelegate {
     
     // MARK: Properties
     
@@ -35,6 +35,9 @@ class AddRecommendationViewController: UIViewController, UIPickerViewDataSource,
         subjectPicker.dataSource = self
         
         topicTextField.delegate = self
+        
+        descriptionTextField.delegate = self
+        guideTextField.delegate = self
         
         typeSegmentedControl.selectedSegmentIndex = 0
         typeOfMaterialLabel.text = "Livro"
@@ -85,6 +88,17 @@ class AddRecommendationViewController: UIViewController, UIPickerViewDataSource,
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Hide the keyboard
         textField.resignFirstResponder()
+        return true
+    }
+    
+    // MARK: UITextViewDelegate
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if (text == "\n") {
+            //action here
+            textView.resignFirstResponder()
+            return false
+        }
         return true
     }
     
