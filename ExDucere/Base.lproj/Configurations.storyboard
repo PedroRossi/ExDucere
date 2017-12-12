@@ -31,13 +31,19 @@
                                             <segue destination="V2y-GI-v2D" kind="show" id="Y3V-SQ-BFT"/>
                                         </connections>
                                     </button>
-                                    <view tag="300" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alI-BM-DKy">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZA2-AV-gdE">
                                         <rect key="frame" x="0.0" y="80" width="262.5" height="49.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
+                                        <color key="backgroundColor" red="0.0043225900429999997" green="0.70920691690000004" blue="0.039847204150000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Log Out">
+                                            <color key="titleColor" red="0.9974820419" green="1" blue="0.97940767129999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logOut:" destination="TfQ-wx-tja" eventType="touchUpInside" id="pB3-6y-bDy"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="alI-BM-DKy" firstAttribute="height" secondItem="bJq-Fx-HOy" secondAttribute="height" id="9cw-Vg-X92"/>
+                                    <constraint firstItem="ZA2-AV-gdE" firstAttribute="height" secondItem="bJq-Fx-HOy" secondAttribute="height" id="VTy-EB-bDY"/>
                                 </constraints>
                             </stackView>
                         </subviews>

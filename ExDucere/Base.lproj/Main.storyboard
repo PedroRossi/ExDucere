@@ -82,7 +82,7 @@
                                                     <color key="titleColor" red="0.99748204191269363" green="1" blue="0.97940767133668705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="q3M-Dr-yzo" kind="show" id="vOJ-bH-f9T"/>
+                                                    <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qAF-4w-gYS"/>
                                                 </connections>
                                             </button>
                                             <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghd-ni-Qch">
@@ -122,6 +122,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="I9w-UD-lQJ"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="La7-Q9-ecW" id="02n-ZW-7fL"/>
+                        <outlet property="passwordTextField" destination="zva-nQ-MxB" id="jTs-Ip-jGd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -318,10 +322,10 @@
             </objects>
             <point key="canvasLocation" x="221.59999999999999" y="-0.44977511244377816"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="nPS-mY-jyb">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="kjb-E5-aDf" customClass="RootViewController" customModule="ExDucere" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="kjb-E5-aDf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5PZ-th-PTv">
                         <autoresizingMask key="autoresizingMask"/>
@@ -412,6 +416,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4BW-yW-2Vz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

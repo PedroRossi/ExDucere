@@ -13,10 +13,20 @@ import FirebaseDatabase
 
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     private func sendToTabBar() {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let tabBarController = storyBoard.instantiateViewController(withIdentifier: "tabBar") as! UITabBarController
         self.present(tabBarController, animated: false, completion: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let user = Auth.auth().currentUser
+        if (user != nil) {
+            self.sendToTabBar()
+        }
     }
     
     override func viewDidLoad() {
@@ -73,15 +83,40 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         // print("User Logged Out")
     }
+    
+    @IBAction func logIn(_ sender: Any) {
+        let email = emailTextField.text!
+        let pass = passwordTextField.text!
+        if (email == "" || pass == "") {
+            sendAlert(title: "Erro ao logar", message: "Por favor preencha os campos para logar!")
+        } else {
+            Auth.auth().signIn(withEmail: email, password: pass) { (user, err) in
+                if (err != nil) {
+                    self.sendAlert(title: "Erro ao logar", message: "Não foi possível logar, verifique sua senha e email")
+                    return;
+                }
+                self.sendToTabBar()
+            }
+        }
+    }
+    
+    private func sendAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let cancel = UIAlertAction(title: "OK", style: .cancel , handler: nil)
+        alert.addAction(cancel)
+        present(alert, animated: true, completion: nil)
+    }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        let user = Auth.auth().currentUser
+        if (user != nil) {
+            self.sendToTabBar()
+        }
     }
-    */
 
 }
