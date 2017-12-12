@@ -16,6 +16,10 @@
 		03D596081FCD8EE5004F04AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D596061FCD8EE5004F04AE /* LaunchScreen.storyboard */; };
 		03D596131FCD8EE6004F04AE /* ExDucereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D596121FCD8EE6004F04AE /* ExDucereTests.swift */; };
 		03D5961E1FCD8EE6004F04AE /* ExDucereUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D5961D1FCD8EE6004F04AE /* ExDucereUITests.swift */; };
+		03DFA69D1FDFFBC900337FB4 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFA6991FDFFBC900337FB4 /* DetailsViewController.swift */; };
+		03DFA69E1FDFFBC900337FB4 /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFA69A1FDFFBC900337FB4 /* DataCell.swift */; };
+		03DFA69F1FDFFBC900337FB4 /* FilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03DFA69B1FDFFBC900337FB4 /* FilterView.xib */; };
+		03DFA6A01FDFFBC900337FB4 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DFA69C1FDFFBC900337FB4 /* FilterView.swift */; };
 		03E754F21FDDB4B200BA87C4 /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E754F11FDDB4B200BA87C4 /* Recommendation.swift */; };
 		03EB5CC61FDF342E004B7E0A /* ConfigurationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EB5CC51FDF342E004B7E0A /* ConfigurationsViewController.swift */; };
 		03EDAE291FDD82FB0088A70C /* AddRecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EDAE281FDD82FB0088A70C /* AddRecommendationViewController.swift */; };
@@ -62,6 +66,10 @@
 		03D596191FCD8EE6004F04AE /* ExDucereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExDucereUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D5961D1FCD8EE6004F04AE /* ExDucereUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExDucereUITests.swift; sourceTree = "<group>"; };
 		03D5961F1FCD8EE6004F04AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03DFA6991FDFFBC900337FB4 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		03DFA69A1FDFFBC900337FB4 /* DataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
+		03DFA69B1FDFFBC900337FB4 /* FilterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterView.xib; sourceTree = "<group>"; };
+		03DFA69C1FDFFBC900337FB4 /* FilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		03E754F11FDDB4B200BA87C4 /* Recommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommendation.swift; sourceTree = "<group>"; };
 		03EB5CC51FDF342E004B7E0A /* ConfigurationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsViewController.swift; sourceTree = "<group>"; };
 		03EDAE281FDD82FB0088A70C /* AddRecommendationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecommendationViewController.swift; sourceTree = "<group>"; };
@@ -227,6 +235,10 @@
 		8E22A27B1FD9666700E0B8DE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				03DFA69A1FDFFBC900337FB4 /* DataCell.swift */,
+				03DFA6991FDFFBC900337FB4 /* DetailsViewController.swift */,
+				03DFA69C1FDFFBC900337FB4 /* FilterView.swift */,
+				03DFA69B1FDFFBC900337FB4 /* FilterView.xib */,
 				8E22A27C1FD9677500E0B8DE /* HomeViewController.swift */,
 				8E22A27E1FD96EFE00E0B8DE /* HomeCellTableViewCell.swift */,
 			);
@@ -367,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03DFA69F1FDFFBC900337FB4 /* FilterView.xib in Resources */,
 				03A7D8FF1FD98BAA003F3C23 /* AddRecommendation.storyboard in Resources */,
 				03D596081FCD8EE5004F04AE /* LaunchScreen.storyboard in Resources */,
 				03F9A5F91FCD9A010050519A /* GoogleService-Info.plist in Resources */,
@@ -564,8 +577,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03DFA6A01FDFFBC900337FB4 /* FilterView.swift in Sources */,
 				03F9A6021FCD9D6C0050519A /* SignupViewController.swift in Sources */,
 				8E22A27F1FD96EFE00E0B8DE /* HomeCellTableViewCell.swift in Sources */,
+				03DFA69D1FDFFBC900337FB4 /* DetailsViewController.swift in Sources */,
+				03DFA69E1FDFFBC900337FB4 /* DataCell.swift in Sources */,
 				03EDAE291FDD82FB0088A70C /* AddRecommendationViewController.swift in Sources */,
 				03EB5CC61FDF342E004B7E0A /* ConfigurationsViewController.swift in Sources */,
 				03E754F21FDDB4B200BA87C4 /* Recommendation.swift in Sources */,
